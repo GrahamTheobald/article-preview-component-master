@@ -31,7 +31,7 @@ button {
 
 .wrapper {
 	justify-self: center;
-	max-width: 330px;
+	width: 330px;
 	border-radius: 1rem;
 	background-color: white;
 	overflow:hidden;
@@ -49,7 +49,6 @@ button {
 			width: 100%;
 		}
 	}
-
 	&__text {
 		padding: 2rem;
 		color: $VeryDarkGrayishBlue;
@@ -61,15 +60,12 @@ button {
 			color: $DesaturatedDarkBlue;
 		}
 	}
-
-
-
 	&__profile, &__share {
 		padding: 1rem 2rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
+		height: 5rem;
 		&__left {
 			display:flex;
 			align-items: center;
@@ -90,12 +86,13 @@ button {
 			img {
 				width: 1rem;
 			}
+			img:hover {
+				cursor: pointer;
+			}
 		}
 	}
-
 	&__share {
 		background-color: $VeryDarkGrayishBlue;
-
 		&__left {
 			img {
 				width: revert;
@@ -104,6 +101,9 @@ button {
 			&--p{
 				color: $DesaturatedDarkBlue;
 			}
+		}
+		&__right {
+			background-color: $DesaturatedDarkBlue;
 		}
 	}
 

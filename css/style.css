@@ -29,7 +29,7 @@ button {
 
 .wrapper {
   justify-self: center;
-  max-width: 330px;
+  width: 330px;
   border-radius: 1rem;
   background-color: white;
   overflow: hidden;
@@ -61,6 +61,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 5rem;
 }
 .article-preview__profile__left, .article-preview__share__left {
   display: flex;
@@ -83,6 +84,9 @@ button {
 .article-preview__profile__right img, .article-preview__share__right img {
   width: 1rem;
 }
+.article-preview__profile__right img:hover, .article-preview__share__right img:hover {
+  cursor: pointer;
+}
 .article-preview__share {
   background-color: hsl(217deg, 19%, 35%);
 }
@@ -92,6 +96,9 @@ button {
 }
 .article-preview__share__left--p {
   color: hsl(214deg, 17%, 51%);
+}
+.article-preview__share__right {
+  background-color: hsl(214deg, 17%, 51%);
 }
 
 .hidden {
