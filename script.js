@@ -7,7 +7,10 @@ articlePreview.addEventListener("click", e => {
 
 function toggleShareDisplays() {
     const shareDisplay = document.querySelector(".article-preview__share")
-
     shareDisplay.classList.toggle("hidden")
 
+    if (window.matchMedia('screen and (max-width:776px)').matches) return
+    shareButtons = document.querySelectorAll(".shareButton")
+    shareButtons.forEach(button => button.classList.toggle("hidden"))
+    document.querySelector(".article-preview__profile__right").classList.toggle("darkBlue")
 }
