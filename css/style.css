@@ -76,6 +76,9 @@ button {
   color: hsl(214deg, 17%, 51%);
 }
 .article-preview__profile__right, .article-preview__share__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(210deg, 46%, 95%);
   width: 2rem;
   height: 2rem;
@@ -87,7 +90,13 @@ button {
 .article-preview__profile__right img:hover, .article-preview__share__right img:hover {
   cursor: pointer;
 }
+.article-preview__profile {
+  position: relative;
+}
 .article-preview__share {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 1;
   background-color: hsl(217deg, 19%, 35%);
 }
 .article-preview__share__left img {
@@ -102,5 +111,20 @@ button {
 }
 
 .hidden {
-  display: none;
+  z-index: -1;
+}
+
+@media (min-width: 776px) {
+  .wrapper {
+    width: 700px;
+  }
+  .article-preview {
+    display: flex;
+  }
+  .article-preview__image {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=style.css.map */

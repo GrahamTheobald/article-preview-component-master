@@ -7,9 +7,7 @@ articlePreview.addEventListener("click", e => {
 
 function toggleShareDisplays() {
     const shareDisplay = document.querySelector(".article-preview__share")
-    const normalDisplay = document.querySelector(".article-preview__profile")
 
     shareDisplay.classList.toggle("hidden")
-    normalDisplay.classList.toggle("hidden")
 
 }
